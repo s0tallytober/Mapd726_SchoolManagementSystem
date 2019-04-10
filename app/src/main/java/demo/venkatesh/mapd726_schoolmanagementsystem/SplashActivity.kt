@@ -16,8 +16,8 @@ class SplashActivity : Activity() {
     override fun onResume() {
         super.onResume()
         Handler().postDelayed({
-           // startActivity(Intent(this@SplashActivity, SelectLoginTypeActivity::class.java))
-          //  finish()
+            startActivity(Intent(this@SplashActivity, SelectLoginTypeActivity::class.java))
+           finish()
         }, 2000)
     }
 
